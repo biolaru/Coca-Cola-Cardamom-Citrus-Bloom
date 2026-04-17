@@ -1,178 +1,142 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coca-Cola Cardamom & Citrus Bloom</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-}
-
-header {
-    background: linear-gradient(135deg, #ff0000, #ff7b00);
-    padding: 100px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 3em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px 0;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-h2 {
-    color: #ff7b00;
-}
-
-img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background: #ff0000;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-footer {
-    background: black;
-    padding: 30px;
-    text-align: center;
-}
-
-a {
-    color: #38bdf8;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Coca-Cola Cardamom & Citrus Bloom – Băutură răcoritoare premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descoperă Coca-Cola Cardamom & Citrus Bloom – noua băutură răcoritoare cu aromă exotică de cardamom și citrice, ediție limitată.">
+  <meta name="robots" content="index,follow">
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Coca-Cola Cardamom & Citrus Bloom – Băutură nouă">
+  <meta property="og:description" content="Inovează-ți gustul cu noua Coca-Cola Cardamom & Citrus Bloom, combinația de cardamom și citrice.">
+  <meta property="og:image" content="images/cola-bloom-og.jpg">
+  <meta property="og:type" content="website">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
+  <header role="banner" class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Coca-Cola Bloom</a>
+      <button class="nav-toggle" aria-label="Deschide meniul">☰</button>
+      <nav role="navigation" class="nav-menu">
+        <a href="#hero">Acasă</a>
+        <a href="#product">Produs</a>
+        <a href="#benefits">Beneficii</a>
+        <a href="#diff">Diferentiere</a>
+        <a href="#ansoff">Ansoff</a>
+        <a href="#strategy">Strategie</a>
+        <a href="#packaging">Ambalaj</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#sources">Surse</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
     <h1>Coca-Cola Cardamom & Citrus Bloom</h1>
     <p>Experiență nouă într-un gust familiar</p>
-</header>
+    <a href="#product" class="btn cta-button">Află mai mult</a>
+  </section>
 
-<section>
+  <section id="product" class="section">
     <h2>Despre produs</h2>
-    <div class="card">
-        <p>
-        Coca-Cola Cardamom & Citrus Bloom este o băutură răcoritoare inovatoare care combină gustul clasic Coca-Cola cu o aromă exotică de cardamom și note citrice de lămâie și mandarină.
-        </p>
-        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
-    </div>
-</section>
+    <p>Coca-Cola Cardamom & Citrus Bloom este o băutură răcoritoare carbogazoasă *premium*, ce combină gustul clasic de Coca-Cola cu aroma exotică de cardamom verde și note citrice de lămâie și mandarină.</p>
+    <img src="images/cardamom-citrus.jpg" alt="Cardamom verde și felii de portocală – ingrediente ale noii băuturi.">
+  </section>
 
-<section>
-    <h2>De ce este diferit?</h2>
-    <div class="card">
-        <ul>
-            <li>Aromă exotică unică (cardamom)</li>
-            <li>Combinație premium de gusturi</li>
-            <li>Ediție limitată</li>
-            <li>Experiență nouă pentru consumatori</li>
-        </ul>
-    </div>
-</section>
-
-<section>
+  <section id="benefits" class="section">
     <h2>Beneficii pentru consumator</h2>
-    <div class="card">
+    <div class="cards">
+      <div class="card">
         <h3>Funcționale</h3>
-        <p>Răcorire rapidă și energie</p>
-
+        <p>Răcorire și energie instantă – este o băutură gata de consum, cu zaharuri și cofeină.</p>
+      </div>
+      <div class="card">
         <h3>Emoționale</h3>
-        <p>Plăcerea de a încerca ceva nou</p>
-
+        <p>Senzația de descoperire și surpriză – aromă neobișnuită de cardamom, plăcută și unică.</p>
+      </div>
+      <div class="card">
         <h3>Transformatoare</h3>
-        <p>Consumatorul se simte modern și deschis la experiențe</p>
-
+        <p>Simți că ești deschis la experiențe noi și „la curent” cu trenduri globale.</p>
+      </div>
+      <div class="card">
         <h3>Sociale</h3>
-        <p>Perfect pentru ieșiri cu prietenii</p>
+        <p>Perfectă pentru a fi împărtășită cu prietenii la petreceri sau evenimente.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section>
-    <h2>Poziționare pe piață</h2>
-    <div class="card">
-        <p>
-        Produsul este poziționat ca o băutură premium accesibilă, destinată tinerilor care caută experiențe noi și gusturi diferite.
-        </p>
-    </div>
-</section>
+  <section id="diff" class="section">
+    <h2>Diferentiere vs. Competitori</h2>
+    <p>În timp ce băuturile răcoritoare obișnuite (Coca-Cola Original, Pepsi, sucuri de fructe, etc.) oferă arome clasice, *Cardamom & Citrus Bloom* introduce un ingredient exotic (cardamom) și o combinație de citrice pentru prospețime. Această inovație plasează produsul în zona premium și experiențială, diferită de ofertele standard de pe piața din România.</p>
+  </section>
 
-<section>
+  <section id="ansoff" class="section">
+    <h2>Matricea Ansoff (Strategia de dezvoltare)</h2>
+    <p>Conform Matricei Ansoff, strategia este **Dezvoltare de produs** (introducerea unui produs nou pe o piață existentă). Practic, Coca-Cola este deja prezentă în România, iar lansarea a noi arome corespunde unui Product Development【48†L85-L90】. Această strategie permite reducerea riscului (folosim brandul deja cunoscut) și aducem inovare printr-o aromă premium.</p>
+  </section>
+
+  <section id="strategy" class="section">
     <h2>Strategia de marketing</h2>
-    <div class="card">
-        <p>
-        Strategia utilizată este dezvoltarea de produs (Ansoff), deoarece produsul este nou, dar este lansat pe o piață existentă.
-        </p>
-        <button onclick="alert('Produs nou + piață existentă = Dezvoltare de produs')">
-            Vezi explicația
-        </button>
+    <ul>
+      <li>Campanie **digitală**: promovare pe rețele sociale (Instagram, TikTok) către publicul tânăr, folosind hashtag-uri tematice.</li>
+      <li>Evenimente de lansare în locații trendy (cafenele, baruri), cu degustări gratuite.</li>
+      <li>Parteneriate cu influenceri/food-bloggeri pentru recenzii (UX storytelling).</li>
+      <li>Campanie out-of-home în orașele mari (panouri stradale, reclame în metrou și autobuze).</li>
+      <li>Disponibilitate inițială în ediție limitată – ambalaj special atractiv (vezi secțiunea Ambalaj).</li>
+    </ul>
+  </section>
+
+  <section id="packaging" class="section">
+    <h2>Ambalaj și design</h2>
+    <p>Produsul va fi lansat ca **ediție limitată**, ambalaj deosebit, pentru a crea un sentiment de exclusivitate. Vom folosi culori care să reflecte portocaliul și cardamomul, cu finisaj premium (suprafață mată, font îndrăzneț). Trendurile de packaging sugerează că astfel de colaborări *limited edition* generează entuziasm şi devin obiecte colecționabile【8†L123-L128】. Designul va fi minimalist, cu tipografie clară şi premium, transmitând „sophistication”【8†L166-L170】. (Exemplu: sticlă elegantă, etichetă aurie pe portocaliu, element grafic cu cardamom.)</p>
+    <img src="images/limited-edition.jpg" alt="Exemplu de ambalaj de ediție limitată – design minimalist și culori portocalii distinctive.">
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galerie foto</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.pexels.com/photos/30748997/pexels-photo-30748997.jpeg" alt="Sticlă stilizată cu cardamom și felii de portocală pe masă.">
+        <figcaption>Ingrediente premium – cardamom și citrice în noua aromă.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.pexels.com/photos/9009822/pexels-photo-9009822.jpeg" alt="Pahar cu băutură răcoritoare portocalie cu zmeură.">
+        <figcaption>Mix tropical și citric – un gust revitalizant.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.pexels.com/photos/209709/pexels-photo-209709.jpeg" alt="Persoană ținând un pahar de băutură la plajă.">
+        <figcaption>Moment social – savurează cu prietenii noua Cola exotică.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.pexels.com/photos/932026/pexels-photo-932026.jpeg" alt="Aspect top-view: pahar cu suc portocaliu și felie de portocală.">
+        <figcaption>Un strop de portocală – referință la nota citrică din aromă.</figcaption>
+      </figure>
     </div>
-</section>
+  </section>
 
-<section>
-    <h2>Bibliografie</h2>
-    <div class="card">
-        <ul>
-            <li><a href="https://www.coca-cola.ro/produse" target="_blank">Coca-Cola România</a></li>
-            <li><a href="https://www.pepsi.com" target="_blank">Pepsi Official</a></li>
-            <li><a href="https://www.statista.com/topics/1618/soft-drinks/" target="_blank">Statista – Soft Drinks</a></li>
-            <li><a href="https://www.investopedia.com/terms/a/ansoff-matrix.asp" target="_blank">Investopedia – Ansoff Matrix</a></li>
-            <li><a href="https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/" target="_blank">Smart Insights – Ansoff Model</a></li>
-            <li><a href="https://corporatefinanceinstitute.com/resources/management/ansoff-matrix/" target="_blank">CFI – Ansoff Matrix</a></li>
-            <li><a href="https://www.mordorintelligence.com/industry-reports/carbonated-soft-drinks-market" target="_blank">Mordor Intelligence</a></li>
-            <li><a href="https://hbr.org/2016/10/the-value-of-customer-experience-quantified" target="_blank">Harvard Business Review</a></li>
-        </ul>
-    </div>
-</section>
+  <section id="sources" class="section">
+    <h2>Surse și bibliografie</h2>
+    <ul>
+      <li><a href="https://www.coca-cola.ro/produse" target="_blank">Coca-Cola Romania – Produse</a></li>
+      <li><a href="https://www.pepsi.com" target="_blank">Pepsi Official</a></li>
+      <li><a href="https://www.statista.com/topics/1618/soft-drinks/" target="_blank">Statista – Soft Drinks Market</a></li>
+      <li><a href="https://www.investopedia.com/terms/a/ansoff-matrix.asp" target="_blank">Investopedia – Ansoff Matrix</a></li>
+      <li><a href="https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/" target="_blank">SmartInsights – Ansoff Model</a></li>
+      <li><a href="https://corporatefinanceinstitute.com/resources/management/ansoff-matrix/" target="_blank">CFI – Ansoff Matrix</a></li>
+      <li><a href="https://www.mordorintelligence.com/industry-reports/carbonated-soft-drinks-market" target="_blank">Mordor Intelligence – Carbonated Drinks</a></li>
+      <li><a href="https://hbr.org/2014/08/the-value-of-customer-experience-quantified" target="_blank">HBR – The Value of Customer Experience, Quantified</a></li>
+      <li>Kotler & Keller – *Marketing Management* (conceptul de valoare percepută)</li>
+    </ul>
+  </section>
 
-<footer>
-    <p>Proiect Marketing - Coca-Cola Cardamom & Citrus Bloom</p>
-</footer>
+  <footer role="contentinfo">
+    <p>&copy; 2026 Coca-Cola Company. Toate drepturile rezervate.</p>
+  </footer>
 
-<script>
-document.addEventListener("scroll", () => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        if(position < window.innerHeight) {
-            card.style.opacity = 1;
-        }
-    });
-});
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
