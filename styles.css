@@ -1,0 +1,134 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0e5d9; /* crem deschis */
+  color: #333;
+}
+header.navbar {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ff7b00;
+  text-decoration: none;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+}
+.nav-menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-menu a:hover {
+  color: #ff7b00;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('images/hero-background.jpg') center/cover no-repeat;
+  color: white;
+}
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.cta-button {
+  background: #ff7b00;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background: #e66a00;
+}
+.section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.section h2 {
+  color: #ff7b00;
+  margin-bottom: 0.5em;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  flex: 1 1 200px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.card h3 {
+  margin-top: 0;
+  color: #ff7b00;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+.gallery figcaption {
+  font-size: 0.9em;
+  color: #555;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+  }
+  .nav-menu a {
+    margin: 10px 0;
+    padding: 10px 20px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
