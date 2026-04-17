@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coca-Cola Cardamom & Citrus Bloom</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #ff0000, #ff7b00);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    color: #ff7b00;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+    text-align: center;
+}
+
+a {
+    color: #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Coca-Cola Cardamom & Citrus Bloom</h1>
+    <p>Experiență nouă într-un gust familiar</p>
+</header>
+
+<section>
+    <h2>Despre produs</h2>
+    <div class="card">
+        <p>
+        Coca-Cola Cardamom & Citrus Bloom este o băutură răcoritoare inovatoare care combină gustul clasic Coca-Cola cu o aromă exotică de cardamom și note citrice de lămâie și mandarină.
+        </p>
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+    </div>
+</section>
+
+<section>
+    <h2>De ce este diferit?</h2>
+    <div class="card">
+        <ul>
+            <li>Aromă exotică unică (cardamom)</li>
+            <li>Combinație premium de gusturi</li>
+            <li>Ediție limitată</li>
+            <li>Experiență nouă pentru consumatori</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Beneficii pentru consumator</h2>
+    <div class="card">
+        <h3>Funcționale</h3>
+        <p>Răcorire rapidă și energie</p>
+
+        <h3>Emoționale</h3>
+        <p>Plăcerea de a încerca ceva nou</p>
+
+        <h3>Transformatoare</h3>
+        <p>Consumatorul se simte modern și deschis la experiențe</p>
+
+        <h3>Sociale</h3>
+        <p>Perfect pentru ieșiri cu prietenii</p>
+    </div>
+</section>
+
+<section>
+    <h2>Poziționare pe piață</h2>
+    <div class="card">
+        <p>
+        Produsul este poziționat ca o băutură premium accesibilă, destinată tinerilor care caută experiențe noi și gusturi diferite.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Strategia de marketing</h2>
+    <div class="card">
+        <p>
+        Strategia utilizată este dezvoltarea de produs (Ansoff), deoarece produsul este nou, dar este lansat pe o piață existentă.
+        </p>
+        <button onclick="alert('Produs nou + piață existentă = Dezvoltare de produs')">
+            Vezi explicația
+        </button>
+    </div>
+</section>
+
+<section>
+    <h2>Bibliografie</h2>
+    <div class="card">
+        <ul>
+            <li><a href="https://www.coca-cola.ro/produse" target="_blank">Coca-Cola România</a></li>
+            <li><a href="https://www.pepsi.com" target="_blank">Pepsi Official</a></li>
+            <li><a href="https://www.statista.com/topics/1618/soft-drinks/" target="_blank">Statista – Soft Drinks</a></li>
+            <li><a href="https://www.investopedia.com/terms/a/ansoff-matrix.asp" target="_blank">Investopedia – Ansoff Matrix</a></li>
+            <li><a href="https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/" target="_blank">Smart Insights – Ansoff Model</a></li>
+            <li><a href="https://corporatefinanceinstitute.com/resources/management/ansoff-matrix/" target="_blank">CFI – Ansoff Matrix</a></li>
+            <li><a href="https://www.mordorintelligence.com/industry-reports/carbonated-soft-drinks-market" target="_blank">Mordor Intelligence</a></li>
+            <li><a href="https://hbr.org/2016/10/the-value-of-customer-experience-quantified" target="_blank">Harvard Business Review</a></li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>Proiect Marketing - Coca-Cola Cardamom & Citrus Bloom</p>
+</footer>
+
+<script>
+document.addEventListener("scroll", () => {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        if(position < window.innerHeight) {
+            card.style.opacity = 1;
+        }
+    });
+});
+</script>
+
+</body>
+</html>
